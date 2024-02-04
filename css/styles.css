@@ -3,6 +3,9 @@
 }
 
 .heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 2px;
 }
 
@@ -49,7 +52,21 @@ a {
     margin: 0;
 }
 
+.section h3, hr {
+    color:  #0b5345;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10em;
+}
+
 @media only screen and (max-width: 600px) {
+    .heading {
+        flex-direction: column;
+    }
+
     .info {
         display: flex;
         flex-direction: column;
